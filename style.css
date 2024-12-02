@@ -1,0 +1,202 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    display: flex;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr 0.8fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.5fr 0.6fr;
+    grid-template-areas: "header header header header"
+    "navigation main main main" "navigation statistika section1 section2"
+    "navigation footer footer footer";
+    grid-gap: 1rem;
+    background:#dceaf7;
+}
+
+.header {
+    grid-area: header;
+    justify-content: space-between;
+    display: flex;
+}
+
+.header h1 {
+    color: rgb(14,  56, 134);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    float: left;
+}
+
+.button input {
+    border-radius: 10px;
+    border: 1px solid skyblue;
+    margin: 30px;
+    padding: 10px 30px;
+    padding-right: 50px;
+}
+
+.main {
+    grid-area: main;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #2a2aeb;
+    padding: 20px 30px;
+    align-items: flex-start; /* sejarah elemen
+    teks dan gambar di bagian atas */
+    display: flex;
+    color: white;
+}
+
+.img-main {
+    margin-right: 150px;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+
+.img-main h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    line-height: 1;
+}
+
+.img .tambahan {
+    padding-top: 10px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.Dea img {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    margin-right: 50px;
+    border: 5px solid white;
+    margin-top: 30px;
+}
+
+.navigation {
+    background: rgb(15,  88, 223);
+    grid-area: navigation;
+    border-radius: 15px;
+}
+
+.logo {
+    height: 10px;
+    padding: 16px;
+}
+
+.menu {
+    height: 20px;
+    position: relative;
+    list-style: none;
+    padding-top: 0px;
+}
+
+.menu :hover {
+    background-color: rgb(14,  56, 134);
+}
+
+.menu li {
+    width: 260px;
+    height: 50px;
+    margin-top: 30px;
+    margin-right: 40px;
+    align-content: center;
+    justify-content:center;
+
+}
+
+.menu li a {
+    margin-left: 90px;
+    padding-top: 0px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.statistika {
+    grid-area: statistika;
+    padding: 10px 1px;
+    margin: 5px;
+}
+
+img {
+    height: 445px;
+    width: 500px;
+}
+
+.section1 {
+    background: whitesmoke;
+    grid-area: section1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+
+.matkul {
+    background-color: #dceaf7;
+    border-radius: 10px;
+    padding: 5px 18px;
+    margin-bottom: 3px;
+}
+
+.matkul .jumlah {
+    padding: 1px;
+    color: #2a2aeb;
+}
+
+.section2 {
+    background: white;
+    grid-area: section2;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+
+.daring {
+    background-color: #dceaf7;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-bottom: 3px;
+}
+
+.daring .jadwal {
+    padding: 1px;
+    color: #2a2aeb;
+}
+
+footer {
+    background-color: white;
+    grid-area: footer;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+footer .lampiran {
+    background-color:#dceaf7;
+    padding: 20px 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+
+footer a {
+    color: #2a2aeb;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 0.2fr;
+    }
+}
+
+
